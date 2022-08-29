@@ -18,14 +18,10 @@ class RecyclerViewAdapter() :
         private val binding = itemBinding
         fun bind (items: PivkoModel) {
             binding.apply {
-                val kal = items.Litor.toString()
-                val kac = items.Color
-                val kan = items.Name
-                val kat = items.Taste.toString()
-                tv3.text = "Название:$kan"
-                tv4.text = "Цвет:$kac"
-                tv5.text = "Наличие:$kal литров"
-                tv6.text = "Вкусно:$kat"
+                tv3.text = "Название:${items.Name}"
+                tv4.text = "Цвет:${items.Color}"
+                tv5.text = "Наличие:${items.Litor.toString()} litrov"
+                tv6.text = "Вкусно:${items.Taste.toString()}"
 
             }
         }

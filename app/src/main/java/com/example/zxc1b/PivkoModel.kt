@@ -1,9 +1,10 @@
 package com.example.zxc1b
 
 data class PivkoModel(
-    var Color: String,
-    var Name: String,
-    var Litor:Int,
-    var Taste: Boolean
+    val Color: String,
+    val Name: String,
+    val Litor:Int,
+    val Taste: Boolean
 )
+
 
